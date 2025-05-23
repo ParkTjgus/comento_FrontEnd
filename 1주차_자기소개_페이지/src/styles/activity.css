@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("../assets/font/DungGeunMo.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  background: linear-gradient(to left, #b1e4ff, #f3eebe, #ffe8f1);
+}
+
+header {
+  background: linear-gradient(to right, #80bfff, #ffe8f2);
+}
+
+h1 {
+  font-family: "DungGeunMo", system-ui;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: "DungGeunMo", system-ui;
+  font-weight: 400;
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  margin-top: 20px;
+}
+
+.main > section {
+  display: flex;
+  gap: 16px;
+}
+
+section > .fa-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f777b9;
+  border-radius: 100%;
+  border: solid 2px #fffed7;
+
+  width: 32px;
+  height: 32px;
+
+  color: #fffed7;
+}
+
+.activity > h4 {
+  margin-top: 0.5rem;
+}
+
+.activity-box {
+  background: #fffed7;
+
+  border: solid 2px #fde68a;
+  border-radius: 16px;
+
+  width: 600px;
+
+  padding: 8px 40px;
+}
+
+.activity-box > h4 {
+  color: #d97706;
+  margin-bottom: 0;
+}
+
+.activity-box > ul {
+  margin-top: 0.5rem;
+}
+.activity-box > ul > li {
+  font-size: 12px;
+}
+
+/* background cloud */
+.star-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.cloud {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 9999px;
+}
+.cloud:nth-child(1) {
+  top: 15%;
+  left: 12%;
+  width: 190px;
+  height: 80px;
+}
+.cloud:nth-child(2) {
+  top: 75%;
+  right: 10%;
+  width: 134px;
+  height: 80px;
+}
