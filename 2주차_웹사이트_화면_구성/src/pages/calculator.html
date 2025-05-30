@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <link rel="stylesheet" href="../styles/calculator.css">
+</head>
+
+<body>
+    <div class="heart-container">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <main>
+        <section class="header">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+        </section>
+        <section class="viewer">
+            <span>0</span>
+        </section>
+
+        <section class="button-container">
+            <calc-button type="clear" label="C"></calc-button>
+            <calc-button type="operator" label="( )"></calc-button>
+            <calc-button type="operator" label="%"></calc-button>
+            <calc-button type="operator" label="÷"></calc-button>
+
+            <calc-button type="number" label="7"></calc-button>
+            <calc-button type="number" label="8"></calc-button>
+            <calc-button type="number" label="9"></calc-button>
+            <calc-button type="operator" label="×"></calc-button>
+
+            <calc-button type="number" label="4"></calc-button>
+            <calc-button type="number" label="5"></calc-button>
+            <calc-button type="number" label="6"></calc-button>
+            <calc-button type="operator" label="-"></calc-button>
+
+            <calc-button type="number" label="1"></calc-button>
+            <calc-button type="number" label="2"></calc-button>
+            <calc-button type="number" label="3"></calc-button>
+            <calc-button type="operator" label="+"></calc-button>
+
+            <calc-button type="number" label="+/-"></calc-button>
+            <calc-button type="number" label="0"></calc-button>
+            <calc-button type="number" label="."></calc-button>
+            <calc-button type="equal" label="="></calc-button>
+        </section>
+    </main>
+
+</body>
+
+<script src="https://kit.fontawesome.com/3edbad8fcf.js" crossorigin="anonymous"></script>
+<script src="../components/CalculatorButton.js"></script>
+
+</html>
