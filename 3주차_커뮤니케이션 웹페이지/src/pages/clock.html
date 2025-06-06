@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계</title>
+    <link rel="stylesheet" href="../styles/clock.css">
+</head>
+
+<body>
+    <section class="mobile_phone">
+        <header>
+            <span>🔋</span>
+            <span class="battery">100%</span>
+        </header>
+        <main>
+            <h1 class="clock">
+                --:--:--
+            </h1>
+            <form class="alarm_form">
+                <input type="number" id="alarm_hour" placeholder="시" min="0" max="23" required />
+                <input type="number" id="alarm_minute" placeholder="분" min="0" max="59" required />
+                <input type="number" id="alarm_second" placeholder="초" min="0" max="59" required />
+                <button type="submit">알람 추가</button>
+            </form>
+            <section>
+                <h2>⏰ 알람 목록 ⏰</h2>
+                <ul class="alarm_list">
+
+                </ul>
+            </section>
+        </main>
+    </section>
+</body>
+
+<script src="../services/batterService.js"></script>
+<script src="../services/clockService.js"></script>
+<script src="../services/alarmService.js"></script>
+
+</html>
